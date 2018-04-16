@@ -1,0 +1,14 @@
+Overview of code sample:
+
+I have created a gmail logging project to demo the test automation framework...
+
+I'm including the core of the test automation architecture (for the grid). In order to provision the various targets, we use a factory 
+design pattern so as to give the callers the precise WebDriver for the target under test.
+
+We're also using a Page Object Model, wherein we represent a page (or significant portions of the page) as its own object: the API calls
+are housed in the page object (see pageObjects package) and hence the test cases can have a more DSL feel. We
+have moved the common functions in an abstract base class, that represents the Base Page and the common aspects of the test cases into
+a base test case class (BaseTestcase.class).
+
+Lastly, I have included a snippet of the parallel engine; this uses Java Executors to manage the threads so that each target is spun in its 
+own thread.
