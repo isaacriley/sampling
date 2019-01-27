@@ -48,8 +48,8 @@ import com.gmail.util.AutomationHelper;
 
 /**
  * <pre>This class forms the basis for the Page Object Model (POM) pattern</pre>
- * This is the base class for the Page Object Model. Each page and its 
- * accompanying page object will inevitably inherit/extend this base class.
+ * This is the base class for the Page Object Model. Each page and its own accompanying page object 
+ * will inevitably inherit/extend this base class.
  *
  * I have omitted some of the code, this can be a rather sizeable class -- you'd be surprised 
  * what the individual page objects have in common.
