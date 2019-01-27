@@ -46,7 +46,7 @@ public class GridParallelHelper extends Parameterized{
 		public void finished() {
 			executor.shutdown();
 			try {
-				//existing tasks have 5 minutes to wrap up (maybe too long but...)
+				//existing tasks have 5 minutes to wrap up (maybe too long but... nah if Jenkins runs this overnoght, it's OK)
 				executor.awaitTermination(5, TimeUnit.MINUTES);
 			} catch (InterruptedException e) {
 				AutomationHelper.logStackTrace("Thread Termination Failure: "+e.getMessage());
